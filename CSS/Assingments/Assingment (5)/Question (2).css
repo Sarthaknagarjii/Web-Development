@@ -1,0 +1,22 @@
+#container{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.option{
+    font-family: Georgia;
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}

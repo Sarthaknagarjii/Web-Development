@@ -1,0 +1,12 @@
+div{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    display: grid;
+    grid-template-rows: 12px;
+    grid-template-columns: 12px;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-column-start: 5px;
+
+}

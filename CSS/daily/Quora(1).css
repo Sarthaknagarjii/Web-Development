@@ -1,0 +1,87 @@
+/* Universal selector */
+
+*{
+    font-family: cursive;
+}
+
+/* element seletor */
+
+h3{
+    color: purple;
+}
+
+h1{
+    color: #b92b27;
+}
+
+/* ID selector */
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+/* class selector*/
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* desendent slectors */
+
+p a{
+    color: aquamarine;
+    background-color: teal;
+}
+
+/*adjacent sibling combinator*/
+
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    color: darkgreen;
+    background-color: salmon;
+}
+
+/*child combinator*/
+
+div>input{
+    background-color: darksalmon;
+}
+
+/* attribute selector*/
+
+input[type="text"]{
+    color: maroon;
+
+}
+
+/* hover property (this property  is when we put curosor on elements what changes should done */
+
+h3:hover{
+    text-decoration: none;
+}
+
+/*pseudo elements (first letter) */
+
+h1::first-letter{
+    color: blueviolet;
+
+}
+/* first line we use to selelect first line of any paragraph*/
+
+/* slelcton pseudo element to */
+
+
+/* !important property which have higher proirity in css */
+
+h3{
+    background-color: chocolate !important;
+}
