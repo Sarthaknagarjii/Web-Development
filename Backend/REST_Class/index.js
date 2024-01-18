@@ -54,10 +54,19 @@ app.get("/posts/:id",(req,res) => {
     
 });
 
-app.patch("/posts/:id" ,(req,res) => {
+app.patch("/posts/:id", (req ,res) => {
     let { id } = req.params;
-    console.log(id);
-    res.send("patch request working");
+    let newContent = req.content; 
+    let post = posts.find((p) => id === p.id);
+    post.content = newContent;
+    console.log(post);
+    res.redirect("/posts");
+});
+
+app.delete("/posts/:id",(req,res) => {
+    let {id } =req.params;
+    let post = posts.filter((p) => id !== p.id);
+    res.redirect("/posts");
 });
 
 app.listen(port,() => {
